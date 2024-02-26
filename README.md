@@ -31,4 +31,8 @@ L. Nataraj, S. Karthikeyan, G. Jacob, and B. S. Manjunath. 2011. Malware images:
 | Lolyda.AA3 | 123 | 0 | 123 |
 
 
-It may be time to retire this dataset.
+It may be time to retire this dataset. I would still consider this a good starting point, but the duplicates need to be removed before doing anything with it. The labels and the absence (or maybe it's just too hard to find) of the original binaries makes this unappealing for explorative research. A comparison between feature extraction based techniqiues and image classification techniques cannot be achieved with this dataset.
+
+The mentioned method to convert binaries to images is relevant, and this could be applied to other datasets.
+
+Putting the files that are labeled as duplicates by the hash_check.py program into VirusTotal yields different MD5 and SHA Hashes but the same VHash, Authentihash, Imphash and Rich PE Header Hash. A lot of the properities seem to be the same.
